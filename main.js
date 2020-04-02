@@ -34,11 +34,12 @@ const buildPlaces = () => {
     domStringBuilder +=     `<div class="card-body">`
     domStringBuilder +=     `<h3 class="card-header"><img class="placePic" src="${place.imgUrl}" /></h3>`
     domStringBuilder +=         `<h5 class="card-title">${place.cityState}</h5>`
-    domStringBuilder +=         `<p class="card-text">${place.favoriteRestaurant}</p>`
-    domStringBuilder +=         `<p class="card-text">${place.favoriteBar}</p>`
-    domStringBuilder +=         `<p class="card-text">${place.favoriteHotel}</p>`
+    domStringBuilder +=     `<div class="text-center">Favorite:</div>`
+    domStringBuilder +=         `<p class="card-text"><h6>Restaurant:</h6> ${place.favoriteRestaurant}</p>`
+    domStringBuilder +=         `<p class="card-text"><h6>Bar:</h6> ${place.favoriteBar}</p>`
+    domStringBuilder +=         `<p class="card-text"><h6>Hotel:</h6> ${place.favoriteHotel}</p>`
     domStringBuilder +=     `</div>`
-    domStringBuilder +=     `<p class="card-footer text-muted">${place.favoriteTouristAttraction}</p>`
+    domStringBuilder +=     `<p class="card-footer text-muted">Tourist Attraction: ${place.favoriteTouristAttraction}</p>`
     domStringBuilder +=     `</div>`
     domStringBuilder += `</div>`
     });
