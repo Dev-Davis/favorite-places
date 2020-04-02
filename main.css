@@ -2,6 +2,11 @@ body {
     background-color: lightblue;
 }
 
+img
+{
+    height: 15rem;
+}
+
 #fav-places {
     display: flex;
     flex-wrap: wrap;
@@ -19,7 +24,11 @@ font-family: 'Patrick Hand', cursive;
     border-top-right-radius: 3px;
     margin-bottom: 20px;
     box-shadow: 5px 5px 10px black;
+}
 
+.card-text
+{
+    padding: 0;
 }
 
 p.card-footer.text-muted {
